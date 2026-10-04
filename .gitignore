@@ -1,0 +1,16 @@
+# Dependencies y builds
+node_modules/
+dist/
+.next/
+*.tsbuildinfo
+
+# Secrets y config local
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+
+# Output de renders y media generada
+apps/api/output/

@@ -1,0 +1,18 @@
+export const env = {
+  port: Number(process.env.PORT || 4000),
+  databaseUrl: process.env.DATABASE_URL || 'postgresql://mensajes:mensajes@localhost:5432/mensajesdefe?schema=public',
+  redisUrl: process.env.REDIS_URL || 'redis://localhost:6379',
+  jwtSecret: process.env.JWT_SECRET || 'change_me_super_secret',
+  adminEmail: process.env.ADMIN_EMAIL || 'admin@ejemplo.com',
+  adminPassword: process.env.ADMIN_PASSWORD || 'cambia_esta_clave_en_produccion',
+  frontendUrl: process.env.FRONTEND_URL || 'http://localhost:3000',
+  aiTextProvider: process.env.AI_TEXT_PROVIDER || 'local',
+  aiImageProvider: process.env.AI_IMAGE_PROVIDER || 'local',
+  ttsProvider: process.env.TTS_PROVIDER || 'local',
+  openaiKey: process.env.OPENAI_API_KEY || '',
+  geminiKey: process.env.GEMINI_API_KEY || '',
+  elevenLabsKey: process.env.ELEVENLABS_API_KEY || '',
+  ffmpegBin: process.env.FFMPEG_BIN || 'ffmpeg',
+  outputDir: process.env.OUTPUT_DIR || '/app/output',
+  publicDir: process.env.PUBLIC_DIR || '/app/public',
+};
